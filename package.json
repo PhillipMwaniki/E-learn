@@ -1,0 +1,14 @@
+{
+  "name": "E-learn",
+  "version": "1.0.3",
+  "private": "true",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "mongojs": "*",
+    "angular": "*",
+    "bson": "*",
+    "stylus": "*",
+    "nib": "*"
+  }
+}

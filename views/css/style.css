@@ -1,0 +1,19 @@
+.ajk-table {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 5% 0;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+	border-collapse: separate;
+}
+
+}
+.ajk-table:hover {
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+}
+
+.ajk-table tr {
+	padding-bottom: 15em;
+	background-color: #E8E8E8 ; 
+}
