@@ -4,10 +4,10 @@
   "private": "true",
   "dependencies": {
     "express": "*",
+    "body-parser": "*",
     "jade": "*",
     "mongojs": "*",
     "angular": "*",
-    "bson": "*",
     "stylus": "*",
     "nib": "*"
   }
