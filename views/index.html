@@ -21,14 +21,17 @@
 
 
 <div class="container" ng-controller="myCtrl" ng-app="myApp">
-    <h1>My <span>Mongo</span> Admin page</h1>
+    <div class="ajk-title">
+      <img src="images/MongoDB.png" alt="MongoDB">
+      <h1>My <span>Mongo</span> Admin page</h1>
+    </div>
     <table class="table table-bordred table-striped ajk-table">
       <thead>
         <tr>
           <th><input type="checkbox" id="checkall" /></th>
           <th>Name</th>         
           <th>Email</th>
-          <th>Number</th>
+          <th>id</th>
           <th>Action</th>
           <th>&nbsp;</th>
         </tr>
@@ -36,9 +39,9 @@
       <tbody>
         <tr>
           <td>&nbsp;</td>
-          <td><input class="form-control" ng-model="contact.name"></td>
-          <td><input class="form-control" ng-model="contact.email"></td>
-          <td><input class="form-control" ng-model="contact.number"></td>
+          <td><input class="form-control has-error" ng-model="contact.name"></td>
+          <td><input class="form-control has-error" ng-model="contact.email"></td>
+          <td><input class="form-control has-error" ng-model="contact.number"></td>
           <td><button class="btn btn-primary" ng-click="addContact()">Add Contact</button></td>
           <td>
           	<button class="btn btn-primary" ng-click="update()" >Update</button>

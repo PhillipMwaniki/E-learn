@@ -17,3 +17,18 @@
 	padding-bottom: 15em;
 	background-color: #E8E8E8 ; 
 }
+
+.ajk-title {
+    background-color: #E8E8E8 ;
+}
+.ajk-title img {
+  float: left;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.ajk-title h1{
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
