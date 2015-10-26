@@ -1,11 +1,7 @@
-// require express module
 var express = require('express');
-//var boostrap = require('bootstrap'); 
 var path = require('path'); //core module 
-// "username:password@example.com/contactlist" 
 var databaseUrl = "localhost:27017/DB"; // default env
-// not needed, but emulates a MongoDB JavaScript client 
-//var collections = ["DB", "contact"]
+
 var mongojs = require("mongojs");
 var db = mongojs("DB",['contact']); 
 var bodyParser = require('body-parser');
@@ -15,11 +11,11 @@ var app = express();
 
 db.on('error', function (err) {
     console.log('database error', err)
-})
+}); 
  
 db.on('connect', function () {
     console.log('database connected')
-})
+}); 
 
 // store all html files in views 
 app.use(express.static(__dirname + '/views'));
